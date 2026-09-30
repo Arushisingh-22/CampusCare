@@ -1,0 +1,14 @@
+[
+  {
+    "id": "CC1003",
+    "title": "Library Wi-Fi not working",
+    "category": "Internet",
+    "location": "Central Library",
+    "description": "Wi-Fi is unavailable in the library.",
+    "priority": "Medium",
+    "status": "Pending",
+    "email": "student@college.com",
+    "date": "2026-09-30",
+    "remarks": ""
+  }
+]

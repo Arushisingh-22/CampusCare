@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #202938;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: 8px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.hero-section {
+  padding: 90px 20px;
+  color: white;
+  background: linear-gradient(135deg, #0d6efd, #4b65d7);
+}
+
+.hero-section h1 {
+  margin-bottom: 18px;
+}
+
+.hero-text {
+  max-width: 650px;
+}
+
+.feature-card,
+.complaint-card,
+.form-card {
+  border: 0;
+  border-radius: 16px;
+}
+
+.feature-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+  font-size: 42px;
+}
+
+.form-page {
+  width: 100%;
+  max-width: 720px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.form-card {
+  overflow: hidden;
+}
+
+.form-control,
+.form-select {
+  min-height: 44px;
+  border-radius: 8px;
+}
+
+textarea.form-control {
+  min-height: 120px;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.summary-box {
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  height: 100%;
+}
+
+.summary-box h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.summary-box p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.complaint-card {
+  transition: box-shadow 0.2s ease;
+}
+
+.complaint-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.footer {
+  background: #17243a;
+  color: #e6eaf2;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.modal-backdrop {
+  z-index: 1040;
+}
+
+.modal {
+  z-index: 1050;
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 65px 16px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .form-page {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
